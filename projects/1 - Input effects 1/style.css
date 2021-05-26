@@ -1,0 +1,44 @@
+/* Attention, for accessibility, is good your input field has outline or border effect when having focus */
+
+input {
+  display: block;
+  width: 180px;
+  height: 30px;
+  padding: 0 6px;
+  border: 0;
+  outline: 0; 
+
+  transition: border 0.4s, width 0.4s;
+}
+
+input + input {
+  margin-top: 16px;
+}
+
+
+
+#example-1 {
+  border: 2px solid gray;
+}
+
+#example-1:focus {  
+  border-color: lightgreen;
+}
+
+#example-1:not([value=""]):not(:focus) {
+  border-color: lightgreen;
+}
+
+
+
+#example-2 {
+  width: 120px;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: gray;
+}
+
+#example-2:focus {  
+  border-color:cyan;
+  width: 180px;
+}
